@@ -256,7 +256,7 @@ int main()
         n++;
         i++;
     }
-    std::cout<<i<<'\n';
+    //std::cout<<i<<'\n';
     /*
     Selection_Sort(b,n);
     Bubble_Sort(b,n);
@@ -274,7 +274,7 @@ int main()
         for(int k=0;k<=n;k++)
             b[k]=a[k];
         auto begin = std::chrono::high_resolution_clock::now();
-        Count_Sort(b,n);
+        //copy the sorting algorithm caller here
         auto end = std::chrono::high_resolution_clock::now();
         auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
         sum=elapsed.count() * 1e-9+sum;
