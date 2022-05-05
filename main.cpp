@@ -274,13 +274,11 @@ int main()
         for(int k=0;k<=n;k++)
             b[k]=a[k];
         auto begin = std::chrono::high_resolution_clock::now();
-        //printArray(b,n);
         Count_Sort(b,n);
-        //printArray(b,n);
         auto end = std::chrono::high_resolution_clock::now();
         auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
         sum=elapsed.count() * 1e-9+sum;
-        printf("Time measured: %.9f seconds.\n", elapsed.count() * 1e-9);
+        //printf("Time measured: %.9f seconds.\n", elapsed.count() * 1e-9);
     }
     printf("Final Time: %.9f seconds.\n", sum/100);
     for(int k=0;k<=n;k++)
